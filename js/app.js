@@ -52,7 +52,7 @@ function callback( metadata ) {
 	}
 	map.fitBounds( boundLimit );
 	myAppViewModel.init( markers );
-}
+};
 
 function mapConstructor() {
 	map = new google.maps.Map( document.getElementById('map') , {
@@ -172,6 +172,6 @@ var myAppViewModel = {
 			}	
 		}	
 	}
-}
+};
 ko.applyBindings( myAppViewModel );
 myAppViewModel.searchQ.subscribe( myAppViewModel.searchFunction );
