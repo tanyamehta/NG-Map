@@ -1,77 +1,70 @@
-
 html,
-      body {
-        font-family: Arial, sans-serif;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-       #map {
-        height: 100%;
-        height: 58%;
-        border: 3px solid #999;
-      }
-
-      
-
-      input {
-        font-size: 12px;
-      }
-
-      h1 {
-        color: #525454;
-        font-size: 22px;
-        margin: 0 0 10px 0;
-        text-align: center;
-      }
-
-      .inputBox{
-          width: 100%;
-          box-sizing: border-box;
-          
-          border-radius: 4px;
-          font-size: 15px;
-          margin-bottom: 5px;
-      }
-
-      .container {
-        height: 100%;
-        position: relative;
+body {
+  font-family: 'Aldrich', sans-serif;
+  font-weight: bolder;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+}
+.container {
+  height: 100%;
+  position: relative;
+}
+h1 {
+  color: #525454;
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+#hide-listings,
+#show-listings {
+  width: 48%;
+}
+#map {
+  bottom:0px;
+  height: 100%;
+  left: 28%;
+  position: absolute;
+  right: 0px;
+}
+.options-box {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  height: 100%;
+  padding: 10px 10px 30px 10px;
+  text-align: left;
+  width: 28%;
+}
+.list-group-item:hover {
+      background-color: #02B3E4;
+}
+#List {
+  height: 250px;
+  overflow-y: scroll;
+}
+input {
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 2px;
+  width: 100%;
+}
+#marker-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Aldrich', sans-serif;
+}
+@media only screen and (max-width: 750px) {
+    #map {
+        left:0%;
+        top: 35%;
+    }
+    .options-box {
         width: 100%;
-      }
-
-      
-
-      #hide-listings,
-      #show-listings {
-        width: 48%;
-        font-size: 15px;
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
-        cursor: pointer;
-      }
-      
-
-      .error{
-        color: red;
-      }
-
-      
-
-      .options-box {
-        background: #fff;
-        border: 1px solid #999;
-        border-radius: 3px;
-        height: 100%;
-        padding: 10px 10px 30px 10px;
-        text-align: left;
-        overflow: auto;
-      }
-
-      @media (max-width: 991px){
-        .options-box{
-          height: 40%;
-          width: 100%;
-          margin-bottom: 20px;
-        }
-       
+        transition: transform 0.3s ease;
+        height: 225px;
+        overflow-y: scroll;
+    }
 }
